@@ -1,0 +1,34 @@
+@import 'components/color';
+@import 'components/variables';
+
+$black: #464646;
+$blackAlpha: rgba(#000, 0.12);
+$lightGray: #cccccc;
+$gray: #868686;
+$darkGray: #666666;
+$red: #e75854;
+$white: #fafafa;
+$darkWhite: #eeeeee;
+$radio-color-fill: #60e340;
+
+
+@import 'materialize';
+
+/* FIXME: Workaround for https://github.com/Dogfalo/materialize/issues/1079 */
+@each $mdi-icon-name, $mdi-icon-value in $mdi-list-icons {
+  .#{$mdi-prefix}#{$mdi-icon-name}:before {
+    content: "\""+ $mdi-icon-value +"\"";
+  }
+}
+
+.dropdown-button {
+  color: $black;
+}
+
+.variant {
+  height: 450px;
+}
+
+.input-field li span {
+  color: $black
+}
