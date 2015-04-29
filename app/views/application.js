@@ -27,7 +27,7 @@ export default Ember.View.extend({
     });
 
     $(document).ready(function(){
-      $('.slider').slider({full_width: false});
+      $('.slider').slider({full_width: false, interval: 50000});
     });
 
 

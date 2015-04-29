@@ -17,10 +17,11 @@ module.exports = function(environment) {
     'default-src': "'none'",
     'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
     'connect-src': "'self' https://api.ctl.io/v2/", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
-    'img-src': "'self'",
+    'img-src': "'self' 'unsafe-inline' http://mediacdn.shopatron.com",
     'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
     'media-src': "'self'",
-    'script-src': "'self' 'unsafe-inline'"
+    'script-src': "'self' 'unsafe-inline'",
+    'frame-src': "'self' 'unsafe-inline' https://www.youtube.com"
   },
 
 

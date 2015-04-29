@@ -5,13 +5,13 @@
     <div class="slider ">
       <ul class="slides">
         <li>
-          <img class="responsive-img" src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t400_4d48e25cb861a04614e6d1cd5fd10a74.jpg"> <!-- random image -->
+          <img class="responsive-img" src="/assets/images/5262-391L.jpg"> <!-- random image -->
         </li>
         <li>
-          <img class="responsive-img" src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t400_2b7dfc448d07cf0c833136cbf5a7a96b.jpg"> <!-- random image -->
+          <img class="responsive-img" src="/assets/images/5262-401B.jpg"> <!-- random image -->
         </li>
         <li>
-          <img class="responsive-img" src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t400_0d84c12fabb4b798c24e4008c58e7600.jpg"> <!-- random image -->
+          <img class="responsive-img" src="/assets/images/5262-411R.jpg"> <!-- random image -->
         </li>
       </ul>
     </div>
@@ -28,13 +28,13 @@
     <br>
     <div class="col s12">
       <div class="input-field col s12">
-          <select>
+          {{#select-dropdown id="size" sizeChosen="sizeChanged"}}
             <option value="" disabled selected>Choose your size</option>
-            <option value="1">Small</option>
-            <option value="2">Medium</option>
-            <option value="3">Large</option>
-            <option value="4">X-Large</option>
-          </select>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xLarge">X-Large</option>
+          {{/select-dropdown}}
           <label>Size</label>
       </div>
     </div>
@@ -42,7 +42,11 @@
       <div class="input-field col s12">
           <select>
             <option value="" disabled selected>Choose your color</option>
+            {{#if medium}}
+            <option value="1" disabled="disabled">Flat Black</option>
+            {{else}}
             <option value="1">Flat Black</option>
+            {{/if}}
             <option value="2">Flat Orange</option>
             <option value="3">Flat Green</option>
           </select>
@@ -67,8 +71,16 @@
     <br>
     <div class="col s12">
       <label>Recommended Items</label>
-      <div class="col s2">
-        <img src="images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+      <div class="row">
+        <div class="col s4">
+          <img src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t400_099e30daf3c0cbc6820de607ed9208c1.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+        </div>
+        <div class="col s4">
+          <img src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t400_54fa902333d412bfa6433a3615a9a0b4.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+        </div>
+        <div class="col s3">
+          <img src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t390_468db41bf8745255050e9663ff2f6508.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+        </div>
       </div>
     </div>
   </div>
@@ -145,7 +157,7 @@
     <div id="test2" class="col s12">
       <br>
       <div class="video-container">
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/VHeBKe_sIEw" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VHeBKe_sIEw" frameborder="0" allowfullscreen></iframe>
       </div>
 
     </div>
