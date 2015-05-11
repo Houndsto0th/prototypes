@@ -20,16 +20,20 @@ export default Ember.View.extend({
 
     $(document).ready(function() {
       $('select').material_select();
+      $('ul.tabs').tabs();
+      $('.slider').slider({full_width: false, interval: 10000, indicators: true});
+      $('.parallax').parallax();
     });
 
-    $(document).ready(function(){
-     $('ul.tabs').tabs();
+    $('.pagination li').on('click', function () {
+      $(this).siblings().removeClass('active');
+      $(this).addClass('active');
     });
 
-    $(document).ready(function(){
-      $('.slider').slider({full_width: false, interval: 50000});
+    $('.pagination-color li').on('click', function () {
+      $(this).siblings().removeClass('active');
+      $(this).addClass('active');
     });
-
 
   }
 

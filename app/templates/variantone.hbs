@@ -1,1 +1,294 @@
+<div class="row valign-wrapper">
+  <div class="col s7">
+    <h3 class="flow-text">Team Arctic Jacket <br>
+      <label> Mens high performance winter garment</label>
+    </h3>
+    <div class="slider ">
+      <ul class="slides">
+        <li>
+          <img class="responsive-img" src="/assets/images/5251-110.jpg">
+        </li>
+        <li>
+          <img class="responsive-img" src="/assets/images/5260-200B.jpg">
+        </li>
+        <li>
+          <img class="responsive-img" src="/assets/images/5251-170.jpg">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col s4 variant z-depth-1">
+    <br>
+    <div class="col s12 center-align">
+      <label>price</label>
+      <h4>$159.95</h4>
+    </div>
+
+    <br>
+    <br>
+    <div class="col s12">
+      <div class="input-field col s12">
+          {{#select-dropdown id="size" sizeChosen="sizeChanged"}}
+            <option value="" disabled selected>Choose your size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="mediumTall">Medium Tall</option>
+            <option value="large">Large</option>
+            <option value="largeTall">Large Tall</option>
+            <option value="xLarge">X-Large</option>
+            <option value="xLargeTall">X-Large Tall</option>
+          {{/select-dropdown}}
+          <label>Size</label>
+      </div>
+    </div>
+    <div class="col s12">
+      <div class="input-field col s12">
+          {{#select-dropdown id="color"}}
+            <option value="" disabled selected>Choose your color</option>
+            {{#if medium}}
+            <option value="1" disabled>Black</option>
+            {{else}}
+            <option value="1">Black</option>
+            {{/if}}
+            <option value="2">Orange</option>
+            <option value="3">Green</option>
+          {{/select-dropdown}}
+          <label>Color</label>
+          <br>
+      </div>
+    </div>
+    <div class="col s12">
+      <div class="input-field col s4">
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        <label>Quantity</label>
+      </div>
+      <div class="col s8">
+        <a class="waves-effect waves-light btn-large green darken-1">Add</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="col s12">
+      <label>Recommended Items</label>
+      <div class="row">
+        <div class="col s4">
+          <img src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t400_099e30daf3c0cbc6820de607ed9208c1.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+        </div>
+        <div class="col s4">
+          <img src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t400_54fa902333d412bfa6433a3615a9a0b4.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+        </div>
+        <div class="col s3">
+          <img src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t390_468db41bf8745255050e9663ff2f6508.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="row">
+    <div class="col s10">
+      <ul class="tabs">
+        <li class="tab col s3"><a class="active" href="#test1">Features</a></li>
+        <li class="tab col s3"><a href="#test2">Video</a></li>
+        <li class="tab col s3"><a href="#test3">Reviews</a></li>
+        <li class="tab col s3"><a href="#test4">Product Care</a></li>
+        <li class="tab col s3"><a href="#test5">Warranty</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12">
+      • Pro Flex jackets and coats have 100 grams of 3M Thinsulate Platinum Insulation built in<br>
+      • Zip in any Flex liner to adjust your level of warmth<br>
+      • High-viz 3M Scotchlite Reflective Material increases your visibility from dusk to dawn<br>
+      • A-Tex waterproof, breathable coated fabric blocks snow, wind and rain while wicking away perspiration<br>
+      • Inside Smartphone Ready Pocket<br>
+      • Zippered vents allow you to regulate your body temp precisely by letting warm air out<br>
+      • Available in Tall sizes<br>
+
+      <table class="hoverable">
+        <thead>
+          <tr>
+            <th>
+              Mens Outerwear Sizing Chart
+            </th>
+          </tr>
+          <tr>
+              <th data-field="id">Size</th>
+              <th data-field="name">Chest</th>
+              <th data-field="price">Waist</th>
+              <th data-field="price">Inseam</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Small</td>
+            <td>36" - 38"</td>
+            <td>28" - 30"</td>
+            <td> 31" </td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td>40" - 42"</td>
+            <td>32" - 34"</td>
+            <td> 31" </td>
+          </tr>
+          <tr>
+            <td>Medium Tall</td>
+            <td>40" - 42"</td>
+            <td>32" - 34"</td>
+            <td> 34" </td>
+          </tr>
+          <tr>
+            <td>Large</td>
+            <td>44" - 46"</td>
+            <td>36" - 38"</td>
+            <td> 32" </td>
+          </tr>
+          <tr>
+            <td>Large Tall</td>
+            <td>44" - 46"</td>
+            <td>36" - 38"</td>
+            <td> 35" </td>
+          </tr>
+          <tr>
+            <td>X-Large</td>
+            <td>48" - 50"</td>
+            <td>42" - 44"</td>
+            <td>33"</td>
+          </tr>
+          <tr>
+            <td>X-Large Tall</td>
+            <td>48" - 50"</td>
+            <td>42" - 44"</td>
+            <td>36"</td>
+          </tr>
+          <tr>
+            <td>2X-Large</td>
+            <td>52" - 54"</td>
+            <td>46" - 48"</td>
+            <td>33"</td>
+          </tr>
+          <tr>
+            <td>2X-Large Tall</td>
+            <td>52" - 54"</td>
+            <td>46" - 48"</td>
+            <td>36"</td>
+          </tr>
+          <tr>
+            <td>3X-Large</td>
+            <td>56" - 58"</td>
+            <td>50" - 52"</td>
+            <td>33"</td>
+          </tr>
+          <tr>
+            <td>3X-Large Tall</td>
+            <td>56" - 58"</td>
+            <td>50" - 52"</td>
+            <td>36"</td>
+          </tr>
+          <tr>
+            <td>4X-Large</td>
+            <td>60" - 62"</td>
+            <td>54" - 56"</td>
+            <td>33"</td>
+          </tr>
+          <tr>
+            <td>5X-Large</td>
+            <td>64" - 66"</td>
+            <td>58" - 60"</td>
+            <td>33"</td>
+          </tr>
+
+
+
+
+        </tbody>
+      </table>
+
+    </div>
+
+    <div id="test2" class="col s12">
+      <br>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VHeBKe_sIEw" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+    <div id="test3" class="col s12">Reviews</div>
+
+    <div id="test4" class="col s12">
+      <p>
+        Definitely read the instructions about painting, decorating, pinstriping,
+        or applying decals to your helmet. Never hang your helmet on the motorcycle's mirrors,
+        turn signals, or backrest. The inner liner can easily be damaged from such handling.
+        In fact, avoid carrying a spare helmet on your motorcycle, unless it's well protected or on
+        your passenger's head. Even the bumps and jarring from normal riding can damage a spare.
+        If it is strapped near hot engine parts or exhaust pipes, the inner liner may distort or
+        melt at the hot spot. The outer shell may not show the damage, but if you've seen the effects of
+        a foam drink cup placed too near excessive heat, you can understand what happens.
+      </p>
+      <p>
+        When you take your helmet off, find a flat, secure place for it. You could set it on the ground,
+        secure it on a rack, or stow it on a shelf. On some bikes, putting it on the fuel tank may expose it to fumes.
+        If you place it on the seat, make sure it won't fall off. If you plan to use a CB radio when you ride,
+        find a model that doesn't require drilling speaker holes in the outer shell.
+        Before you purchase your speakers, check with your state's laws regulating their use in helmets.
+        Some states prohibit them.
+      </p>
+    </div>
+
+    <div id="test5" class="col s12">
+      <p>
+        You may develop, produce, market or distribute. Waiver; Construction.
+        Failure by Apple under this Agreement terminate, Recipient agrees to cease
+        use and Distribution of Executable Versions. You may also choose to grant the copyright holders,
+        and the following notices to the start of each Contributor, changes to the following disclaimer.
+        Redistributions in binary form must reproduce the above copyright notice and a pointer to
+        where the full source distribution as defined in this license.
+      </p>
+      <p>
+        Here is a work based on the recipients' rights hereunder. However,
+        you may choose to distribute the Program which: (i) are separate modules of software
+        generally. NO WARRANTY EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM AS PERMITTED ABOVE,
+        BE LIABLE TO ANY PERSON FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSSES,
+        EVEN IF ADVISED OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER,
+         EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY EXCEPT AS
+         EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY
+          LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY To apply any bug fixes,
+          portability changes, and other legal actions brought by a third party intellectual property rights needed,
+          if any. License. 3. You are responsible for claims and warranties are such Commercial Distributor in,
+          the defense and any licenses granted by such Contributor as a result, the Commercial Contributor must
+          identify itself as the Initial Developer or any derivative version prepared by Licensee.
+      </p>
+      <p>
+        Alternately, in lieu of CNRIs License Agreement. CNRI OPEN SOURCE LICENSE AGREEMENT is between
+        BeOpen.com ("BeOpen"), having an office at 1895 Preston White Drive, Reston, VA 20191 ("CNRI"),
+        and the party making the claim in sufficient detail that a license under Licensed Patents to make,
+        have made, use, practice, sell, and offer for sale, have made, use, offer to sell, import and otherwise
+        using this software, you are nevertheless required to license it under the terms of this License agreement
+        shall be deemed to create any relationship of agency, partnership, or joint venture between PSF and Licensee.
+        This License Agreement is invalid or unenforceable under applicable law, it shall not apply to the
+        Copyright Holder.
+      </p>
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+{{outlet}}
+
 {{outlet}}

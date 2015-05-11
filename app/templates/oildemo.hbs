@@ -1,0 +1,75 @@
+<div class="row valign-wrapper">
+  <div class="col s7">
+    <h3 class="flow-text">ACX 0W-40 ATV Oil Change Kit</h3>
+    <div class="slider ">
+      <ul class="slides">
+        <li>
+          <img class="responsive-img" src="http://arcticcatlubricants.com/wp-content/uploads/2014/01/1436-438_oilchangekit_large1-400x521.png"> <!-- random image -->
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col s4 variant z-depth-1">
+    <br>
+    <div class="col s12 center-align">
+      <label>price</label>
+      <h4>$159.95</h4>
+    </div>
+
+    <br>
+    <br>
+    <div class="col s12">
+      <div class="input-field col s12">
+          {{#select-dropdown}}
+            <option value="" disabled selected>Choose your ATV model</option>
+            <option value="">2012-2015 Prowler</option>
+            <option value="">2011-2015 HDX</option>
+            <option value="">2009-2015 Prowler, XT & XTX</option>
+            <option value="">2012-2015 1000 H2</option>
+            <option value="">2009-2015 550 H1, 650 H1 & 700 H1</option>
+          {{/select-dropdown}}
+          <label>Which model ATV do you own?</label>
+      </div>
+    </div>
+    <div class="col s12">
+      <div class="input-field col s12">
+          {{#select-dropdown}}
+            <option value="" disabled selected>Choose your color</option>
+            {{#if medium}}
+            <option value="1" disabled>Flat Black</option>
+            {{else}}
+            <option value="1">Flat Black</option>
+            {{/if}}
+            <option value="2">Flat Orange</option>
+            <option value="3">Flat Green</option>
+          {{/select-dropdown}}
+          <label>Color</label>
+          <br>
+      </div>
+    </div>
+    <div class="col s12">
+      <div class="input-field col s4">
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        <label>Quantity</label>
+      </div>
+      <div class="col s8">
+        <a class="waves-effect waves-light btn-large green darken-1">Add</a>
+      </div>
+    </div>
+    <br>
+    <br>
+
+  </div>
+<br>
+<br>
+<br>
+</div>
+
+
+
+{{outlet}}

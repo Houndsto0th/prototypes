@@ -7,7 +7,7 @@ export default Ember.Component.extend({
     var self = this;
     $('#size').on('change', function () {
       var size = document.getElementById("size").value;
-      
+      self.sendAction('sizeChosen', size);
     });
   },
 

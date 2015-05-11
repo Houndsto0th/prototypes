@@ -1,89 +1,218 @@
 <div class="row valign-wrapper">
   <div class="col s7">
-    <h3 class="flow-text">MX Team Arctic ZR</h3>
-    <h6>2015 Model</h6>
-    <div class="slider ">
-      <ul class="slides">
-        <li>
-          <img class="responsive-img" src="/assets/images/5262-391L.jpg"> <!-- random image -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    {{#product-slider class="cd-gallery"}}
+    <li>
+    <a href="">
+      <ul class="cd-item-wrapper">
+        <li class="selected">
+          <img class="responsive-img" src="/assets/images/5262-391L.jpg">
         </li>
-        <li>
-          <img class="responsive-img" src="/assets/images/5262-401B.jpg"> <!-- random image -->
+        <li class="move-right">
+          <img class="responsive-img" src="/assets/images/5262-401B.jpg">
         </li>
-        <li>
-          <img class="responsive-img" src="/assets/images/5262-411R.jpg"> <!-- random image -->
+        <li class="">
+          <img class="responsive-img" src="/assets/images/5262-401L.jpg">
         </li>
-      </ul>
-    </div>
+        <li class="">
+          <img class="responsive-img" src="/assets/images/5262-411L.jpg">
+        </li>
+        <li class="">
+          <img class="responsive-img" src="/assets/images/5262-411b.jpg">
+        </li>
+      </ul> <!-- cd-item-wrapper -->
+    </a>
+    <div class="cd-item-info">
+      <b><a href="">MX Team Arctic ZR</a></b>
+      <em class="cd-price">$159.95</em>
+    </div> <!-- cd-item-info -->
+  </li>
+    {{/product-slider}}
   </div>
 
-  <div class="col s4 variant z-depth-1">
-    <br>
-    <div class="col s12 center-align">
-      <label>price</label>
-      <h4>$159.95</h4>
-    </div>
+  <div class="col s5">
+          <div class="center-align">
+            <h5 class="" ><b>MX Team Arctic ZR</b></h5>
+            <label class="">2015 Pro Model</label> <br>
+            <label class="">Part Numbers 5262-(391-418)</label>
+            <hr>
+            <br>
+          </div>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header active"><i class="mdi-editor-attach-money"></i>Variants and Pricing</div>
+              <div class="collapsible-body white">
+                <div class="center-align">
+                  <div class="row">
+                    <div class="col s4 offset-s2">
+                      <label>Retail: </label>
+                      <h5>159.95</h5> <br>
+                    </div>
+                    <div class="col s4">
+                      <label>Discounted: </label>
+                      <h5 class="orange-text">139.95</h5>
 
-    <br>
-    <br>
-    <div class="col s12">
-      <div class="input-field col s12">
-          {{#select-dropdown id="size" sizeChosen="sizeChanged"}}
-            <option value="" disabled selected>Choose your size</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="xLarge">X-Large</option>
-          {{/select-dropdown}}
-          <label>Size</label>
-      </div>
-    </div>
-    <div class="col s12">
-      <div class="input-field col s12">
-          <select>
-            <option value="" disabled selected>Choose your color</option>
-            {{#if medium}}
-            <option value="1" disabled="disabled">Flat Black</option>
-            {{else}}
-            <option value="1">Flat Black</option>
-            {{/if}}
-            <option value="2">Flat Orange</option>
-            <option value="3">Flat Green</option>
-          </select>
-          <label>Color</label>
+                    </div>
+                  </div>
+                  <br>
+                  <label>Select a Color</label>
+                  <ul class="pagination-color center-align">
+                    <li class="waves-effect"><img class="responsive-img" src="/assets/images/5262-391L.jpg"></li>
+                    <li class="waves-effect"><img class="responsive-img" src="/assets/images/5262-401L.jpg"></li>
+                    <li class="waves-effect"><img class="responsive-img" src="/assets/images/5262-411L.jpg"></li>
+                  </ul>
+                  <br>
+                  <label>Select a Size</label>
+                  <ul class="pagination center-align">
+                    <li class="waves-effect"><a href="#!">S</a></li>
+                    <li class="waves-effect"><a href="#!">M</a></li>
+                    <li class="waves-effect"><a href="#!">L</a></li>
+                    <li class="waves-effect"><a href="#!">XL</a></li>
+                  </ul>
+
+                  <label class="orange-text">10+ in stock</label> <br>
+                  <br>
+                  <br>
+                  <a class="white waves-effect waves-orange btn z-depth-1 grey-text text-darken-3"><b>Add to Cart</b></a>
+                  <br>
+                  <br>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-editor-insert-chart"></i>Specs/Sizing</div>
+              <div class="collapsible-body white">
+                <table class="hoverable">
+                  <thead>
+                    <tr>
+                      <th>
+                        MX Helmet Sizing Chart
+                      </th>
+                    </tr>
+                    <tr>
+                        <th data-field="id">Helmet Size</th>
+                        <th data-field="name">Head-Hat Size</th>
+                        <th data-field="price">Head Circ. (in.)</th>
+                        <th data-field="price">Head Circ. (cent.)</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Small</td>
+                      <td>6 3/4 - 6 7/8</td>
+                      <td>21 1/3 - 21 5/8</td>
+                      <td>54 - 55</td>
+                    </tr>
+                    <tr>
+                      <td>Medium</td>
+                      <td>7 - 7 1/8</td>
+                      <td>22 - 22 1/2</td>
+                      <td>56 - 57</td>
+                    </tr>
+                    <tr>
+                      <td>Large</td>
+                      <td>7 1/4 - 7 3/8</td>
+                      <td>22 3/4 - 23 1/4</td>
+                      <td>58 - 59</td>
+                    </tr>
+                    <tr>
+                      <td>X-Large</td>
+                      <td>7 1/2 - -7 5/8</td>
+                      <td>24 1/2 - 24 7/8</td>
+                      <td>60 - 61</td>
+                    </tr>
+                    <tr>
+                      <td>XX_Large</td>
+                      <td>7 3/4 - 7 7/8</td>
+                      <td>24 1/2 - 24 7/8</td>
+                      <td>62 - 63</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-action-add-shopping-cart"></i>Bulk Orders</div>
+              <div class="collapsible-body white">
+                <table class="hoverable">
+                  <thead>
+
+                    <tr>
+                        <th data-field="id">Description1</th>
+                        <th data-field="name">Part Number</th>
+                        <th data-field="price">Cost (per 1)</th>
+                        <th data-field="Add"></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Black Small</td>
+                      <td>5262-555</td>
+                      <td>139.95</td>
+                      <td>
+                        <i {{action 'outOfStock'}} class="mdi-content-add-circle-outline"></i>
+                        <i class="mdi-content-remove-circle-outline"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Black Medium</td>
+                      <td>5262-555</td>
+                      <td>139.95</td>
+                      <td>
+                        <i class="mdi-content-add-circle-outline"></i>
+                        <i class="mdi-content-remove-circle-outline"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Black Large</td>
+                      <td>5262-555</td>
+                      <td>139.95</td>
+                      <td>
+                        <i class="mdi-content-add-circle-outline"></i>
+                        <i class="mdi-content-remove-circle-outline"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Black X-Large</td>
+                      <td>5262-555</td>
+                      <td>139.95</td>
+                      <td>
+                        <i class="mdi-content-add-circle-outline"></i>
+                        <i class="mdi-content-remove-circle-outline"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><div class="divider"></div></td>
+                      <td><div class="divider"></div></td>
+                      <td><div class="divider"></div></td>
+                      <td><div class="divider"></div></td>
+                    </tr>
+
+                    <tr>
+                      <td><div class=""></div></td>
+                      <td><div class=""></div></td>
+                      <td><div class=""></div></td>
+                      <td>Total: $$$ </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
           <br>
-      </div>
-    </div>
-    <div class="col s12">
-      <div class="input-field col s4">
-          <select>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-        <label>Quantity</label>
-      </div>
-      <div class="col s8">
-        <a class="waves-effect waves-light btn-large green darken-1">Add</a>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="col s12">
-      <label>Recommended Items</label>
-      <div class="row">
-        <div class="col s4">
-          <img src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t400_099e30daf3c0cbc6820de607ed9208c1.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+          <br>
+
+
+
         </div>
-        <div class="col s4">
-          <img src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t400_54fa902333d412bfa6433a3615a9a0b4.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-        </div>
-        <div class="col s3">
-          <img src="http://mediacdn.shopatron.com/media/mfg/5665/product_image/thm/t390_468db41bf8745255050e9663ff2f6508.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-        </div>
-      </div>
-    </div>
-  </div>
 
 </div>
 <div class="row">
@@ -91,15 +220,17 @@
       <ul class="tabs">
         <li class="tab col s3"><a class="active" href="#test1">Features</a></li>
         <li class="tab col s3"><a href="#test2">Video</a></li>
-        <li class="tab col s3"><a href="#test3">Reviews</a></li>
+        <li class="tab col s3"><a href="#test3">Q & A</a></li>
         <li class="tab col s3"><a href="#test4">Product Care</a></li>
         <li class="tab col s3"><a href="#test5">Warranty</a></li>
       </ul>
     </div>
     <div id="test1" class="col s12">
+      <br>
+      <div class="container">
       • D.O.T.- and Snell-approved fiberglass shell <br>
       • Twin air intake/exhaust ventilation system <br>
-      • Removable/washable liner <br>
+      • Conehead technology EPS liner <br>
       • Includes removable breath deflector <br>
 
       <table class="hoverable">
@@ -151,7 +282,7 @@
 
         </tbody>
       </table>
-
+      </div>
     </div>
 
     <div id="test2" class="col s12">
@@ -162,9 +293,76 @@
 
     </div>
 
-    <div id="test3" class="col s12">Reviews</div>
+    <div id="test3" class="col s12">
+      <br>
+      <div class="container">
+        <b>Morbi leo risus, porta ac consectetur ac, vestibulum at eros?</b>
+        <p>
+          Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+
+        </p>
+        <b>Morbi leo risus, porta ac consectetur ac, vestibulum at eros?</b>
+        <p>
+          Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+          Nullam quis risus eget urna mollis ornare vel eu leo.
+          Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+          Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+          eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+          Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </p>
+        <b>Morbi leo risus, porta ac consectetur ac, vestibulum at eros?</b>
+        <p>
+          Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+
+        </p>
+        <b>Morbi leo risus, porta ac consectetur ac, vestibulum at eros?</b>
+        <p>
+          Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+          Nullam quis risus eget urna mollis ornare vel eu leo.
+          Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+          Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+          eget lacinia odio sem nec elit.
+        </p>
+        <b>Morbi leo risus, porta ac consectetur ac, vestibulum at eros?</b>
+        <p>
+          Donec sed odio dui.
+        </p>
+
+        <h5> <b>Have a question we haven't answered yet?</b> </h5>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Your company</label>
+              </div>
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
+                <label for="textarea1">Question</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
 
     <div id="test4" class="col s12">
+      <div class="container">
       <p>
         Definitely read the instructions about painting, decorating, pinstriping,
         or applying decals to your helmet. Never hang your helmet on the motorcycle's mirrors,
@@ -183,9 +381,11 @@
         Before you purchase your speakers, check with your state's laws regulating their use in helmets.
         Some states prohibit them.
       </p>
+      </div>
     </div>
 
     <div id="test5" class="col s12">
+      <div class="container">
       <p>
         You may develop, produce, market or distribute. Waiver; Construction.
         Failure by Apple under this Agreement terminate, Recipient agrees to cease
@@ -218,10 +418,7 @@
         This License Agreement is invalid or unenforceable under applicable law, it shall not apply to the
         Copyright Holder.
       </p>
-
-
-
-
+      </div>
     </div>
   </div>
 
