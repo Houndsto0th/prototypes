@@ -23,6 +23,10 @@ export default Ember.View.extend({
       $('ul.tabs').tabs();
       $('.slider').slider({full_width: false, interval: 10000, indicators: true});
       $('.parallax').parallax();
+      $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+      });
     });
 
     $('.pagination li').on('click', function () {

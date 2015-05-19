@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('varianttwo');
   this.route('vehiclesale');
   this.route('oildemo');
+  this.route('orderform');
 });
 
 export default Router;
