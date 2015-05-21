@@ -11,7 +11,7 @@
           <label for="first_name">External Order Number</label>
         </div>
         <div class="input-field col s8 offset-s2">
-          <input id="first_name" type="text" class="validate">
+          <input id="first_name" placeholder="Felix Digabit" type="text" class="validate">
           <label for="first_name">Requested By</label>
         </div>
         <div class="input-field col s8 offset-s2">
@@ -25,7 +25,7 @@
           <label for="last_name">Order Status</label>
         </div>
         <div class="input-field col s8 offset-s2">
-          <input id="last_name" type="text" class="validate">
+          <input id="last_name" placeholder="Felix Digabit" type="text" class="validate">
           <label for="last_name">Ship To Name</label>
         </div>
         <div class="input-field col s8 offset-s2">
@@ -35,5 +35,33 @@
       </div>
     </div>
   </form>
+
+  <table class="bordered striped col s10 offset-s1">
+    <thead>
+      <tr>
+          <th data-field="id">Name</th>
+          <th data-field="name">Item Name</th>
+          <th data-field="price">Item Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Alvin</td>
+        <td>Eclair</td>
+        <td>$0.87</td>
+      </tr>
+      <tr>
+        <td>Alan</td>
+        <td>Jellybean</td>
+        <td>$3.76</td>
+      </tr>
+      <tr>
+        <td>Jonathan</td>
+        <td>Lollipop</td>
+        <td>$7.00</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 {{outlet}}
