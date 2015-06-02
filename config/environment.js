@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'product-pages',
     environment: environment,
-    baseURL: '/',
+    baseURL: 'product_prototype',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
